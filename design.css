@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgba(228,228,220,255);
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+     background-color: rgba(228,228,220,255);;
+     height: 30%;
+     padding: 1.6%;
+     box-shadow: 0px 2px 2px 2px gray;
+}
+
+.logo{
+    /* color: rgb(87, 133, 163); */
+}
+
+ul{
+    margin-left: 50%;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+ul li a{
+    margin-inline: 1.3rem;
+    font-size: 1rem;
+}
+
+ul li i{
+    font-size: 1.5rem;
+}
+
+ul li #home{
+    color: rgb(6, 147, 147);
+}
+
+ul li a:hover{
+    border-bottom: 2px solid rgb(8, 8, 8);
+    cursor: pointer;
+}
+
+ul li i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.main{
+    display:flex;
+    justify-content: space-around;
+}
+
+.main .maintxt{
+    margin-top: 9rem;
+    font-size: 1.8rem;
+}
+
+.main img{
+    margin-top: 5%;
+    margin-right: 0%;
+    height: 58vh;
+    width: 45vw;
+}
+
+.maintxt h1{
+    font-size: 4rem;
+
+}
+
+.maintxt .top{
+    color: rgb(6, 147, 147);
+}
+
+.maintxt p{
+    margin-top: .6rem;
+    font-size: 1.2rem;
+}
+
+button{
+    height: 12%;
+    width: 24%;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    background-color: rgb(6, 147, 147);
+    border: none;
+    color: white;
+}
+
+.maintxt button:hover{
+    border: 2px solid rgb(6, 147, 147);
+    background-color: transparent;
+    color: rgb(6, 147, 147);
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend .head h1{
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    text-decoration: underline;
+}
+
+.head h1{
+    color: rgb(6, 147, 147);
+}
+
+
+.trends .head h1{
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    text-decoration: underline;
+}
+
+.trend .card .crd .btn{
+    height: 7.5%;
+    width: 34%;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    background-color: rgb(6, 147, 147);
+    border: none;
+    color: white;
+}
+
+.trends .card .crd .btn{
+    height: 7.5%;
+    width: 34%;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    background-color: rgb(6, 147, 147);
+    border: none;
+    color: white;
+}
+
+.card .crd{
+    width: 22vw;
+    height: 55vh;
+    background-color: white;
+    margin-inline: .6rem;
+    /* padding: 22px; */
+}
+
+.crd img{
+    width: 15vw;
+    padding: 1%;
+    border-radius: 2%;
+}
