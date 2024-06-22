@@ -19,11 +19,11 @@
             </div>
             <ul>
                 <li>
-                    <a id="home">HOME</a>
-                    <a>SHOPS</a>
-                    <a>BLOG</a>  
-                    <a>ABOUT</a>
-                    <a>CONTACT</a>
+                    <a id="home" onclick="homes()">HOME</a>
+                    <a id="shop" onclick="shops()">SHOPS</a>
+                    <a id="blog" onclick="blogs()">BLOG</a>  
+                    <a id="about" onclick="abouts()">ABOUT</a>
+                    <a id="contact" onclick="contacts()">CONTACT</a>
                     <i class="fa-solid fa-cart-shopping"></i>
                 </li> 
             </ul>
@@ -37,20 +37,20 @@
             <h1 class="top">Super Value Deals</h1>
               <h1>On All Products</h1>
             <p>Favorite brands and hottest trends</p>
-            <button>Explore</button>
+            <button class="btn-e">Explore</button>
           </div>
            <img src="https://img.freepik.com/premium-photo/gorgeous-female-brunette-model-white-clothes_149155-2130.jpg">
         </div>
 
-        <!-- cards -->
+        <!-- Products -->
 
-         <div class="trend">
+         <div class="products">
           <div class="head">
             <h1>Men's Wear</h1>
           </div>
           <div class="card">
             <div class="crd">
-              <img src="https://assets.ajio.com/medias/sys_master/root/20240411/cHCa/6617bb4e05ac7d77bb031e95/-473Wx593H-467162071-black-MODEL.jpg">
+              <img src="https://assets.ajio.com/medias/sys_master/root/20240411/cHCa/6617bb4e05ac7d77bb031e95/-473Wx593H-467162071-black-MODEL.jpg" alt="" onclick="show(this)">
               <h2>Cotton Trending Shirts</h2>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -61,7 +61,7 @@
             </div>
             
             <div class="crd">
-              <img src="https://assets.ajio.com/medias/sys_master/root/20231125/CEcZ/65614bc1ddf77915199b3e62/-473Wx593H-466810276-blue-MODEL.jpg">
+              <img src="https://assets.ajio.com/medias/sys_master/root/20231125/CEcZ/65614bc1ddf77915199b3e62/-473Wx593H-466810276-blue-MODEL.jpg" alt="" onclick="show(this)">
               <h2>Cotton Trending Shirts</h2>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -73,7 +73,7 @@
           
             
             <div class="crd">
-              <img src="https://assets.ajio.com/medias/sys_master/root/20231121/5RT6/655cde47ddf77915199314d4/-473Wx593H-466817674-white-MODEL.jpg">
+              <img src="https://assets.ajio.com/medias/sys_master/root/20231121/5RT6/655cde47ddf77915199314d4/-473Wx593H-466817674-white-MODEL.jpg" alt="" onclick="show(this)">
               <h2>Cotton Trending Shirts</h2>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -87,13 +87,13 @@
             
           <br>
 
-          <div class="trends">
+          <div class="products" id="Sec">
             <div class="head">
-              <h1>Women Wear</h1>
+              <h1>Women's Wear</h1>
             </div>
             <div class="card">
               <div class="crd">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQxSShBNiV6BK4zFqbWjUQwvjnmqapYb6kQeAOG2g4pb1YaCV9awz6rtco7_uy7bRNuP_DjoJZGqJo1YSfXen0F0R4ZaKVCS7OiGscoDHJnjXjGQ6PQwMD5&usqp=CAE">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQxSShBNiV6BK4zFqbWjUQwvjnmqapYb6kQeAOG2g4pb1YaCV9awz6rtco7_uy7bRNuP_DjoJZGqJo1YSfXen0F0R4ZaKVCS7OiGscoDHJnjXjGQ6PQwMD5&usqp=CAE" alt="" onclick="show(this)">
                 <h2>Cotton Ethinic Dress</h2>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -105,7 +105,7 @@
   
 
               <div class="crd">
-                <img src="https://assets.ajio.com/medias/sys_master/root/20230918/ez2g/65087b7fddf7791519e3132d/-473Wx593H-466594545-white-MODEL.jpg">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230918/ez2g/65087b7fddf7791519e3132d/-473Wx593H-466594545-white-MODEL.jpg" alt="" onclick="show(this)">
                 <h2>Striped Crew-Neck T-Shirt</h2>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -117,18 +117,159 @@
             
               
               <div class="crd">
-                <img src="https://assets.ajio.com/medias/sys_master/root/20230629/WnKx/649ce976a9b42d15c91f4616/-473Wx593H-466086897-black-MODEL.jpg">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230629/WnKx/649ce976a9b42d15c91f4616/-473Wx593H-466086897-black-MODEL.jpg" alt="" onclick="show(this)">
                 <h2>High-Rise Trousers</h2>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i><br>
+                <i class="fa-solid fa-star-half-stroke"></i>
                 <button class="btn">Add To Cart</button>
             </div>
             </div>
             </div>
+
+            <!-- cart -->
+
+            <div class="cart">
+              <img id="newImg" src="" alt="">
+              <div class="cartText">
+                <h1>Trending Sop Now</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="bttn">
+                  <button>Buy Now</button>
+                  <button onclick="addCart()">Add To Cart</button>
+                </div>
+                <button class="back">Back</button>
+              </div>
+            </div>
+
+            <!-- about us -->
+            
+            <div class="about">
+
+              <div class="aboutus">
+                  <h1>#About Us</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+
+              <div class="us">
+                  <img src="https://www.cloudways.com/blog/wp-content/uploads/ecommerce-website-checklist-b-.jpg" alt="">
+                  <div class="aboutText">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos atque nam maxime dolorem fuga, rem eum iure quidem! Illo corporis, asperiores ipsum excepturi voluptates necessitatibus consectetur odit omnis hic praesentium autem, officiis dignissimos assumenda saepe.</p>
+                  </div>
+              </div>
+          </div>
+
+            <!-- contact -->
+
+            <div class="contact">
+
+              <div class="contactus">
+                <h1>#Let's Connect</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="me">
+              <div class="contactText">
+                <h1>Visit Our Office Or Connect With Us</h1>
+                <p>Address: Dablin Park, England, New york. </p>
+                <p>Contact: dumiemail@gmail.com</p>
+                <p>Number: 999999000011</p>
+              </div>
+              <img src="https://github.com/shaikhsufyan/Basic-To-Advance-JavaScript-Project/blob/main/E-Commerce%20Web%20JS/map.PNG?raw=true">
+            </div>
+            <div class="form">
+              <h1>Fill This Form To Connect</h1>
+              <input type="text" placeholder="Enter First Name"> <br>
+              <input type="text" placeholder="Enter Last Name"> <br>
+              <input type="text" placeholder="Enter Number"> <br>
+              <input type="text" placeholder="Enter Email"> <br>
+              <input type="text" placeholder="Enter Address"> <br>
+              <button>Submit</button>
+
+          </div>
+            </div>
+
+            <!-- blogs -->
+
+            <div class="trends">
+              <div class="head">
+                <h1>Trending Top Blog's</h1>
+              </div>
+              <div class="bg"> 
+                <div class="blog">
+                  <img src="https://raw.githubusercontent.com/shaikhsufyan/Basic-To-Advance-JavaScript-Project/main/E-Commerce%20Web%20JS/tr1.webp">
+                  <div class="blog-text">
+                    <h2>Trending Girls Cloths</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                  </div>
+                </div>
+
+                <div class="blog">
+                  <img src="https://raw.githubusercontent.com/shaikhsufyan/Basic-To-Advance-JavaScript-Project/main/E-Commerce%20Web%20JS/tr3.webp">
+                  <div class="blog-text">
+                    <h2>Trending Boys Cloths</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://www.apetogentleman.com/">Read More</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+        <!-- Sign Up Page -->
+
+            <div class="sign">
+              <div class="sign-text">
+                <h1>Sign Up</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elite</p>
+              </div>
+              <div class="inp">
+                <input type="text" placeholder="Enter Email">
+                <button>Sign Up</button>
+              </div>
+            </div>
+
+            <!-- Footer -->
+
+            <div class="footer">
+              <div class="footerText">
+                <h2>Wearism</h2>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfaction</p>
+              </div>
+
+              <div class="footerText">
+                <h2>About Us</h2>
+                <p>Adrress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfaction</p>
+              </div>
+
+              <div class="footerText">
+                <h2>Contact</h2>
+                <p>96********</p>
+                <p>Customer</p>
+                <p>Coming Up...</p>
+                <p>New Arrival</p>
+              </div>
+
+              <div class="footerText">
+                <h2>Trending</h2>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Shops</p>
+              </div>
+
+            </div>
       </div>
     <script src="func.js"></script>
 </body>
-</html>
+</html> 

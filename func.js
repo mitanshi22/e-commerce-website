@@ -1,0 +1,107 @@
+let prc = document.querySelector(".products");
+let prc2 = document.getElementById("Sec");
+
+let blogPage = document.querySelector(".trends");
+let mainPage = document.querySelector(".main");
+let abt = document.querySelector(".about");
+let cont = document.querySelector(".contact");
+
+function homes(){
+    mainPage.style.display="flex";
+    blogPage.style.display="block";
+    prc.style.display="block";
+    prc2.style.display="block";
+    abt.style.display="none";
+    cont.style.display="none";
+
+    document.getElementById("blog").style.color="black";
+    document.getElementById("shop").style.color="black";
+    document.getElementById("home").style.color="rgb(6, 147, 147)";
+    document.getElementById("about").style.color="black";
+    document.getElementById("contact").style.color="black";
+}
+
+function shops(){
+    mainPage.style.display="none";
+    blogPage.style.display="none";
+    prc.style.display="block";
+    prc2.style.display="block";
+    abt.style.display="none";
+    cont.style.display="none";
+
+    document.getElementById("blog").style.color="black";
+    document.getElementById("shop").style.color="rgb(6, 147, 147)";
+    document.getElementById("home").style.color="black";
+    document.getElementById("about").style.color="black";
+    document.getElementById("contact").style.color="black";
+}
+
+function blogs(){
+    mainPage.style.display="none";
+    prc.style.display="none";
+    prc2.style.display="none";
+    blogPage.style.display="block";
+    abt.style.display="none";
+    cont.style.display="none";
+
+    document.getElementById("blog").style.color="rgb(6, 147, 147)";
+    document.getElementById("shop").style.color="black";
+    document.getElementById("home").style.color="black";
+    document.getElementById("about").style.color="black";
+    document.getElementById("contact").style.color="black";
+}
+
+function abouts(){
+    mainPage.style.display="none";
+    prc.style.display="none";
+    prc2.style.display="none";
+    blogPage.style.display="none";
+    abt.style.display="block";
+    cont.style.display="none";
+
+    document.getElementById("blog").style.color="black";
+    document.getElementById("shop").style.color="black";
+    document.getElementById("home").style.color="black";
+    document.getElementById("about").style.color="rgb(6, 147, 147)";
+    document.getElementById("contact").style.color="black";
+}
+
+function contacts(){
+    mainPage.style.display="none";
+    prc.style.display="none";
+    prc2.style.display="none";
+    blogPage.style.display="none";
+    abt.style.display="none";
+    cont.style.display="block";
+
+    document.getElementById("blog").style.color="black";
+    document.getElementById("shop").style.color="black";
+    document.getElementById("home").style.color="black";
+    document.getElementById("about").style.color="black";
+    document.getElementById("contact").style.color="rgb(6, 147, 147)";
+}
+
+function show(img){
+    let newImg = document.getElementById("newImg");
+    console.log(img);
+    newImg.src = img.src;
+
+    mainPage.style.display="none";
+    prc.style.display="none";
+    prc2.style.display="none";
+   blogPage.style.display="none";
+   abt.style.display="none";
+   cont.style.display="none"
+    document.querySelector(".prc").style.display="flex";
+}
+
+function addCart(){
+    alert("Added To Cart");
+    location.reload()
+}
+
+ 
+
+
+
+
