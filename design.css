@@ -26,7 +26,7 @@ nav ul li{
 
 ul li a{
     margin-inline: 1.3rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 ul li i{
@@ -95,6 +95,95 @@ ul li i:hover{
     border: 2px solid rgb(6, 147, 147);
     background-color: transparent;
     color: rgb(6, 147, 147);
+}
+
+.account-page{
+    padding: 50px 0;
+    display: none;
+}
+
+.account-page .col-2 img{
+    height: 450px;
+    width: 956px;
+    margin-left: 240px;
+    position: relative;
+}
+
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -426px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    margin-left: 300px;
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 5px;
+    color: #555;
+    cursor: pointer;
+    margin-inline: 16px;
+    width: 100px;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px; 
+    /* margin-inline: 20px; */
+    border: 1px solid #ccc;
+}
+
+form .butn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .butn:focus{
+    outline: none;
+}
+
+#loginForm{
+    left: -300px;
+}
+
+#regForm{
+    left: 0;
+}
+
+form a{
+    font-size: 12px;
+}
+
+#indicator{
+    width: 75px;
+    border: none;
+    background: rgb(6, 147, 147);
+    height: 3px;
+    margin-top: 8px;
+    margin-left: 8px;
+    transform: translate(100px);
+    transition: transform 1s;
 }
 
 /* Products */
@@ -216,6 +305,10 @@ ul li i:hover{
     margin-left: 2rem;
     margin-top: .5rem;
     font-size: 1.1rem;
+}
+.us .aboutText ul li{
+    margin-left: -7rem;
+    margin-top: .6rem;
 }
 
 /* contact */
@@ -341,23 +434,11 @@ ul li i:hover{
     background-color:rgb(2, 2, 66);
     padding: 2.6rem;
 }
-.inp{
-    display: flex;
+.sign-text{
+    width: 100%;
 }
-.inp input{
-    width: 15rem;
-    height: 1.9rem;
-    outline: none;
-    font-size: 1.2rem;
-    border: none;
-}
-.inp button{
-    width: 6.2rem;
-    height: 2rem;
-    background-color: rgb(2, 173, 173);
-    color: white;
-    border: none;
-    margin-top: -.1rem;
+.sign-text h1{
+   font-size: 40px;
 }
 
 /* footer */
@@ -380,7 +461,6 @@ ul li i:hover{
     display: flex;
     justify-content: center;
     display: none;
-
 }
 .cartText{
     padding: 1.3rem;
@@ -395,32 +475,10 @@ ul li i:hover{
 .cartText .bttn button{
     width: 8.7rem;
     height: 2.5rem;
-    background-color: rgb(255, 89, 0);
+    background-color:rgb(4, 136, 136);
     color: white;
     border: none;
     font-size: 1.3rem;
     margin-inline: .5rem;
     margin-top: 1.3rem;
 }
-.cartText .back{
-    width: 8.7rem;
-    height: 2.5rem;
-    background-color:rgb(4, 81, 81);
-    color: white;
-    border: none;
-    font-size: 1.3rem;
-    margin-inline: .5rem;
-    margin-top: 1.3rem;
-    margin-top: 1.3rem;
-}
-
-
-
-
-
-
-
-
-
-
-

@@ -24,12 +24,13 @@
                     <a id="blog" onclick="blogs()">BLOG</a>  
                     <a id="about" onclick="abouts()">ABOUT</a>
                     <a id="contact" onclick="contacts()">CONTACT</a>
+                    <a id="account" onclick="accounts()">ACCOUNT</a> 
                     <i class="fa-solid fa-cart-shopping"></i>
                 </li> 
             </ul>
         </nav>
          
-        <!--main page-->
+        <!-- main page -->
 
         <div class="main">
           <div class="maintxt">
@@ -40,6 +41,42 @@
             <button class="btn-e">Explore</button>
           </div>
            <img src="https://img.freepik.com/premium-photo/gorgeous-female-brunette-model-white-clothes_149155-2130.jpg">
+        </div>
+
+        <!-- account-page -->
+
+         <div class="account-page">
+          <div class="container">
+          <div class="row">
+            <div class="col-2">
+            <img src="https://img.freepik.com/premium-photo/toy-shopping-cart-with-boxes-credit-card-with-copy-space_339191-197.jpg">
+            </div>
+        <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+            <span onclick="login()">Login</span>
+            <span onclick="register()">Register</span>
+            <hr id="indicator">
+            </div>
+          <form id="loginForm">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="butn">Login</button>
+            <br>
+            <a href="">Forgot password</a>
+          </form>
+
+          <form id="regForm">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="butn">Register</button>
+            
+          </form>
+          </div>
+          </div>
+        </div>
+        </div>
         </div>
 
         <!-- Products -->
@@ -65,8 +102,8 @@
               <h2>Cotton Trending Shirts</h2>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <!-- <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i> -->
               <i class="fa-solid fa-star-half-stroke"></i><br>
               <button class="btn">Add To Cart</button>
             </div>
@@ -78,7 +115,7 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <!-- <i class="fa-solid fa-star"></i> -->
               <i class="fa-solid fa-star-half-stroke"></i><br>
               <button class="btn">Add To Cart</button>
             </div>
@@ -98,7 +135,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <!-- <i class="fa-solid fa-star"></i> -->
                 <i class="fa-solid fa-star-half-stroke"></i><br>
                 <button class="btn">Add To Cart</button>
               </div>
@@ -110,8 +147,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i><br>
+                <!-- <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i> --> <br> 
                 <button class="btn">Add To Cart</button>
               </div>
             
@@ -123,7 +160,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
+                <!-- <i class="fa-solid fa-star-half-stroke"></i> -->
                 <button class="btn">Add To Cart</button>
             </div>
             </div>
@@ -134,17 +171,14 @@
             <div class="cart">
               <img id="newImg" src="" alt="">
               <div class="cartText">
-                <h1>Trending Sop Now</h1>
+                <h1>Trending Shop Now</h1>
                 <h2>Special Price</h2>
                 <h2>$11</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="bttn">
                   <button>Buy Now</button>
                   <button onclick="addCart()">Add To Cart</button>
                 </div>
-                <button class="back">Back</button>
+                <!-- <button class="back">Back</button> -->
               </div>
             </div>
 
@@ -160,7 +194,16 @@
               <div class="us">
                   <img src="https://www.cloudways.com/blog/wp-content/uploads/ecommerce-website-checklist-b-.jpg" alt="">
                   <div class="aboutText">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos atque nam maxime dolorem fuga, rem eum iure quidem! Illo corporis, asperiores ipsum excepturi voluptates necessitatibus consectetur odit omnis hic praesentium autem, officiis dignissimos assumenda saepe.</p>
+                      <p>Here, Customers can experience their brand through a screen instead of in-person, where they can touch and handle the products before making a purchase.</p>
+                      <p>This website provide some features like:
+                        <ul>
+                          <li>Massive range of products.</li>
+                          <li>Effective order management.</li>
+                          <li>Multiple online payment option.</li>
+                          <li>Easy return and refunds</li>
+                          <li>Customer review and ratings.</li>
+                        </ul>
+                      </p>
                   </div>
               </div>
           </div>
@@ -226,12 +269,7 @@
 
             <div class="sign">
               <div class="sign-text">
-                <h1>Sign Up</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elite</p>
-              </div>
-              <div class="inp">
-                <input type="text" placeholder="Enter Email">
-                <button>Sign Up</button>
+                <h1><marquee>~Fashion  &nbsp; for &nbsp; Every &nbsp;  You~</marquee></h1>
               </div>
             </div>
 
@@ -247,7 +285,7 @@
 
               <div class="footerText">
                 <h2>About Us</h2>
-                <p>Adrress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Adrress: Dablin Park, England, New york.</p>
                 <p>Service</p>
                 <p>Customer</p>
                 <p>Satisfaction</p>
@@ -255,7 +293,7 @@
 
               <div class="footerText">
                 <h2>Contact</h2>
-                <p>96********</p>
+                <p>999999000011</p>
                 <p>Customer</p>
                 <p>Coming Up...</p>
                 <p>New Arrival</p>
