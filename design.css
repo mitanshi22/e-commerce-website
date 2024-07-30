@@ -95,6 +95,7 @@ ul li i:hover{
     border: 2px solid rgb(6, 147, 147);
     background-color: transparent;
     color: rgb(6, 147, 147);
+    
 }
 
 .account-page{
@@ -104,14 +105,14 @@ ul li i:hover{
 
 .account-page .col-2 img{
     height: 450px;
-    width: 956px;
+    width: 856px;
     margin-left: 240px;
     position: relative;
 }
-
+ 
 .form-container{
     background: #fff;
-    width: 300px;
+    width: 260px;
     height: 360px;
     position: absolute;
     text-align: center;
@@ -120,6 +121,7 @@ ul li i:hover{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
     margin-left: 300px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .form-container span{
@@ -128,7 +130,7 @@ ul li i:hover{
     color: #555;
     cursor: pointer;
     margin-inline: 16px;
-    width: 100px;
+    width: 35px;
 }
 
 .form-btn{
@@ -144,16 +146,29 @@ ul li i:hover{
 }
 
 form input{
-    width: 100%;
+    /* width: 80%; */
     height: 30px;
-    margin: 10px 0;
-    padding: 0 10px; 
-    /* margin-inline: 20px; */
+     margin: 10px 0;
+    padding: 0 10px;  
+    margin-inline: 20px;
     border: 1px solid #ccc;
 }
 
-form .butn{
-    width: 100%;
+form .butn1{
+    width: 55%;
+    height: 30px;
+    background-color: rgb(6, 147, 147);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .butn2{
+    width: 70%;
+    height: 30px;
+    background-color: rgb(6, 147, 147);
+    color: white;
     border: none;
     cursor: pointer;
     margin: 10px 0;
@@ -164,7 +179,7 @@ form .butn:focus{
 }
 
 #loginForm{
-    left: -300px;
+    left: -330px;
 }
 
 #regForm{
